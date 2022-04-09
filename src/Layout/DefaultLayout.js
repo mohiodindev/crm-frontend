@@ -5,7 +5,7 @@ import { Header } from "./Partials/header";
 export function DefaultLayout({ children }) {
   return (
     <div className="defualt-Layout">
-      <header className="header">
+      <header className="header mb-2">
         <Header />
       </header>
       <main className="main">{children}</main>

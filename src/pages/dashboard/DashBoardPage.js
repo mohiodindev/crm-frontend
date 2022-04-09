@@ -1,10 +1,16 @@
 import React from "react";
 import { TicketTable } from "../../Components/ticket-table/TicketTable.js";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { PageBreadcrumb } from "../../Components/breadcrumbs/Breadcrumb.js";
 import tickets from "../../Assests/data/dummyticket.json";
 export const DashBoardPage = () => {
   return (
     <Container>
+      <Row>
+        <Col>
+          <PageBreadcrumb page="Dashboard" />
+        </Col>
+      </Row>
       <Row>
         <Col className=" text-center mt-5 mb-2">
           <Button
