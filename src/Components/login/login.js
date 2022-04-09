@@ -38,7 +38,9 @@ export function LoginForm({
                 required
               />
             </Form.Group>
-            <Button type="submit"> Login</Button>
+            <Button type="submit" variant="info">
+              Login
+            </Button>
           </Form>
           <hr></hr>
         </Col>
