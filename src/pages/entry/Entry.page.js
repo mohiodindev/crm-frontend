@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import "./entry.style.css";
 
 import { Jumbotron } from "react-bootstrap";
-import LoginForm from "../../Components/login/login.js";
-import ResetPassword from "../../Components/password-reset/PasswordReset.js";
-export default function Entry() {
+import { LoginForm } from "../../Components/login/login.js";
+import { ResetPassword } from "../../Components/password-reset/PasswordReset.js";
+export function Entry() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fromLoad, setFromLoad] = useState("login");
@@ -49,7 +49,7 @@ export default function Entry() {
   };
 
   return (
-    <div className="entry-page bg-info">
+    <div className="entry-page bg-dark">
       <Jumbotron className="form-box">
         {fromLoad === "login" && (
           <LoginForm

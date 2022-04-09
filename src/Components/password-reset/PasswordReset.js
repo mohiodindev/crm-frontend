@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-export default function ResetPassword({
+export function ResetPassword({
   handleOnChange,
   handleOnResetSubmit,
   formSwitcher,
